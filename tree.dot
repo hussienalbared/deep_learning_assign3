@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<APP &le; 0.399<br/>entropy = 1.0<br/>samples = 701<br/>value = [346, 355]<br/>class = trisometric>, fillcolor="#fafdfe"] ;
+1 [label=<pMTOR &le; 0.603<br/>entropy = 0.792<br/>samples = 319<br/>value = [243, 76]<br/>class = healthy>, fillcolor="#eda877"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<S6 &le; 0.376<br/>entropy = 0.33<br/>samples = 33<br/>value = [2, 31]<br/>class = trisometric>, fillcolor="#46a3e7"] ;
+1 -> 2 ;
+3 [label=<entropy = 0.0<br/>samples = 2<br/>value = [2, 0]<br/>class = healthy>, fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label=<entropy = 0.0<br/>samples = 31<br/>value = [0, 31]<br/>class = trisometric>, fillcolor="#399de5"] ;
+2 -> 4 ;
+5 [label=<GluR3 &le; 0.204<br/>entropy = 0.628<br/>samples = 286<br/>value = [241, 45]<br/>class = healthy>, fillcolor="#ea995e"] ;
+1 -> 5 ;
+6 [label=<entropy = 0.965<br/>samples = 100<br/>value = [61, 39]<br/>class = healthy>, fillcolor="#f6d2b8"] ;
+5 -> 6 ;
+7 [label=<entropy = 0.206<br/>samples = 186<br/>value = [180, 6]<br/>class = healthy>, fillcolor="#e68540"] ;
+5 -> 7 ;
+8 [label=<AMPKA &le; 0.385<br/>entropy = 0.841<br/>samples = 382<br/>value = [103, 279]<br/>class = trisometric>, fillcolor="#82c1ef"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<pNUMB &le; 0.365<br/>entropy = 0.437<br/>samples = 211<br/>value = [19, 192]<br/>class = trisometric>, fillcolor="#4da7e8"] ;
+8 -> 9 ;
+10 [label=<entropy = 0.106<br/>samples = 143<br/>value = [2, 141]<br/>class = trisometric>, fillcolor="#3c9ee5"] ;
+9 -> 10 ;
+11 [label=<entropy = 0.811<br/>samples = 68<br/>value = [17, 51]<br/>class = trisometric>, fillcolor="#7bbeee"] ;
+9 -> 11 ;
+12 [label=<APP &le; 0.459<br/>entropy = 1.0<br/>samples = 171<br/>value = [84, 87]<br/>class = trisometric>, fillcolor="#f8fcfe"] ;
+8 -> 12 ;
+13 [label=<entropy = 0.799<br/>samples = 99<br/>value = [75, 24]<br/>class = healthy>, fillcolor="#eda978"] ;
+12 -> 13 ;
+14 [label=<entropy = 0.544<br/>samples = 72<br/>value = [9, 63]<br/>class = trisometric>, fillcolor="#55abe9"] ;
+12 -> 14 ;
+}
