@@ -36,3 +36,18 @@ class SortedImageDataset(Dataset):
 
     def __getitem__(self, index):
         return self.images[index], self.labels[index]
+
+
+class NormalDataset(Dataset):
+    def __init__(self, type):
+        self.images, self.labels = load_mnist(dataset=type,
+                                              path="data/FashionMNIST/raw")
+      
+
+        self.len = len(self.labels)
+
+    def __len__(self):
+        return self.len
+
+    def __getitem__(self, index):
+        return self.images[index], self.labels[index]
